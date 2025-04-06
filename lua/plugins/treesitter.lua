@@ -5,7 +5,12 @@ return {
     ensure_installed = {
       "lua",
       "vim",
-      -- add more arguments for adding more treesitter parsers
+      "markdown",
+      "markdown_inline",
+      "r",
+      "rnoweb",
+      "yaml",
+      "csv",
     },
   },
 }
