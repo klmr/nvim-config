@@ -22,7 +22,7 @@ return {
       }
 
       require("r").setup(opts)
-    end
+    end,
   },
 
   {
