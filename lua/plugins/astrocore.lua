@@ -34,10 +34,12 @@ return {
     options = {
       opt = { -- vim.opt.<key>
         colorcolumn = "80,100,120",
+        exrc = true,
         list = true,
         listchars = { tab = "→ ", extends = "⟩", precedes = "⟨", trail = "·", nbsp = "␣" },
         number = true,
         relativenumber = true,
+        secure = true,
         showbreak = "↪ ",
         signcolumn = "yes",
         spell = true,
@@ -76,6 +78,10 @@ return {
 
         -- setting a mapping to false will disable it
         -- ["<C-S>"] = false,
+      },
+      t = {
+        ["jj"] = { "<C-\\><C-n>", desc = "Exit terminal mode" },
+        ["jk"] = { "<C-\\><C-n>", desc = "Exit terminal mode" },
       },
     },
   },
